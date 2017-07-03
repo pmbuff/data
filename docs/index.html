@@ -6,15 +6,43 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+  <style>
+    body {
+    font-size: 16px;
+    letter-spacing: 1px;
+    }
+    
+  </style>
 </head>
 <body>
   <div id="app"></div>
 </body>
 <script>
   window.$docsify = {
-    name: '',
-    repo: ''
+    // auto2top: true,
+    // coverpage: true,
+    // executeScript: true,
+    loadSidebar: true,
+    loadNavbar: false,
+    // maxLevel: 4,
+    name: '产品数据分析入门',
+    repo: 'pmbuff/data',
+    search: {
+      paths: 'auto',
+    },
+    subMaxLevel: 4
   }
 </script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+<!-- 代码高亮插件 -->
+<script src="//unpkg.com/docsify"></script>
+<script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
+<script src="//unpkg.com/prismjs/components/prism-php.js"></script>
+<!-- 自定义导航栏，没用，要定义的是侧边栏_sidebar.md -->
+<!-- <script>
+  window.$docsify = {
+    loadNavbar: true
+  }
+</script>
+<script src="//unpkg.com/docsify"></script> -->
 </html>
