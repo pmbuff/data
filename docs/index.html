@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>数据分析Wiki</title>
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
@@ -11,7 +11,9 @@
     font-size: 16px;
     letter-spacing: 1px;
     }
-    
+/*    .sidebar > ul > li {
+        margin-top: 12px!important;
+    }*/
   </style>
 </head>
 <body>
@@ -20,17 +22,28 @@
 <script>
   window.$docsify = {
     // auto2top: true,
-    // coverpage: true,
     // executeScript: true,
-    loadSidebar: true,
     loadNavbar: false,
     // maxLevel: 4,
-    name: '产品数据分析入门',
+    name: '产品数据分析Wiki',
     repo: 'pmbuff/data',
+    loadSidebar: true,
+    mergeNavbar: true,
+    // autoHeader: true,
+    subMaxLevel: 4,
+    // coverpage: true,
+    // coverpage: '_cover.md'
+    // 搜索
     search: {
+      noData: {
+        '/': '无结果'
+      },
       paths: 'auto',
+      placeholder: {
+        '/': '搜索'
+      }
     },
-    subMaxLevel: 4
+    
   }
 </script>
 <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
@@ -38,11 +51,16 @@
 <script src="//unpkg.com/docsify"></script>
 <script src="//unpkg.com/prismjs/components/prism-bash.js"></script>
 <script src="//unpkg.com/prismjs/components/prism-php.js"></script>
-<!-- 自定义导航栏，没用，要定义的是侧边栏_sidebar.md -->
-<!-- <script>
-  window.$docsify = {
-    loadNavbar: true
+<script type="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
+<!-- 插件：搜索、emoji、图片缩放 -->
+<script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/emoji.js"></script>
+<script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
+<!-- 离线模式 -->
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('sw.js')
   }
 </script>
-<script src="//unpkg.com/docsify"></script> -->
+
 </html>
