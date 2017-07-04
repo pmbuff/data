@@ -17,6 +17,10 @@
     * [常规数据](https://mp.weixin.qq.com/debug/wxadoc/analysis/regular/)
     * [自定义分析](https://mp.weixin.qq.com/debug/wxadoc/analysis/custom/)
 
+* 竞品排名分析
+    * [ASO 排名]()
+    * [关键词分析]()
+
 * 关于
     * [关于我](/about/about-me.md)
     * [请我喝茶](/about/donate.md)
